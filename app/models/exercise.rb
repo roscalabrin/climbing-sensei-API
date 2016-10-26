@@ -11,5 +11,5 @@ class Exercise < ApplicationRecord
   has_many :exercises_tags
   has_many :tags, through: :exercises_tags
   has_many :saved_days_exercises
-  has_many :saved_days, though: :saved_days_exercises
+  has_many :saved_days, through: :saved_days_exercises
 end

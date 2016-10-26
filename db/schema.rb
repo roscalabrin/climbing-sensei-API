@@ -27,9 +27,9 @@ ActiveRecord::Schema.define(version: 20161026004853) do
 
   create_table "exercises_tags", force: :cascade do |t|
     t.integer "exercise_id"
-    t.integer "tags_id"
+    t.integer "tag_id"
     t.index ["exercise_id"], name: "index_exercises_tags_on_exercise_id", using: :btree
-    t.index ["tags_id"], name: "index_exercises_tags_on_tags_id", using: :btree
+    t.index ["tag_id"], name: "index_exercises_tags_on_tag_id", using: :btree
   end
 
   create_table "intensities", force: :cascade do |t|
@@ -70,7 +70,7 @@ ActiveRecord::Schema.define(version: 20161026004853) do
   end
 
   add_foreign_key "exercises_tags", "exercises"
-  add_foreign_key "exercises_tags", "tags", column: "tags_id"
+  add_foreign_key "exercises_tags", "tags"
   add_foreign_key "intensities", "exercises"
   add_foreign_key "levels", "exercises"
   add_foreign_key "saved_days", "users"
