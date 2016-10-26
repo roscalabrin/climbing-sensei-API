@@ -32,6 +32,8 @@ group :development, :test do
   gem 'launchy'
   gem 'shoulda-matchers'
   gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'pry-rails'
   gem 'byebug', platform: :mri
 end
 
