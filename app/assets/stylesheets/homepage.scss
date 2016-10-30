@@ -1,17 +1,24 @@
 @import 'variables';
 
+header[role="banner"] {
+  #logo-main {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
 .btn {
   background-color: $red;
+  opacity: .7;
+  color: $white;
   border-color: $red;
 }
 
 .btn:hover {
-  background-color: $dark-red;
-  border-color: $dark-red;
-}
-
-.homepage-buttons {
-  margin-top: 25%;
+  background-color: $black;
+  opacity: .7;
+  color: $white;
+  border-color: $black;
 }
 
 .sign-in-btn {
@@ -21,7 +28,7 @@
 .absolute-center {
   margin: auto;
   position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 50px; left: 0; bottom: 0; right: 0;
 }
 
 .absolute-center.is-responsive {

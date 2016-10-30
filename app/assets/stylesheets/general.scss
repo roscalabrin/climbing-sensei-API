@@ -7,6 +7,11 @@ html, body {
 body {
   font-family: 'Poppins', sans-serif;
   background-image: asset-url("BWhandsback.png");
+  background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+	background-color: #999;
 }
 
 .notice, .alert {
@@ -27,6 +32,7 @@ body {
 footer {
   height: 80px;
   background-color: $dark-grey;
+  opacity: .7;
   color: $light-grey
 }
 
@@ -38,6 +44,7 @@ footer > p {
 #wrap {
   min-height: 100%;
   height: auto !important;
+  width: 100%; 
   height: 100%;
   margin: 0 auto -80px;
   /* Pad the bottom by footer height */
