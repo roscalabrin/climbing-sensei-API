@@ -17,3 +17,17 @@
 .sign-in-btn {
   margin-bottom: 5%;
 }
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.absolute-center.is-responsive {
+  width: 80%; 
+  height: 40%;
+  min-width: 250px;
+  max-width: 400px;
+  padding: 40px;
+}
