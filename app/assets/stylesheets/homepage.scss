@@ -1,0 +1,25 @@
+$red:      #94090D;
+$dark-red: #5C0002;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: asset-url("BWhandsback.png");
+}
+
+.btn {
+  background-color: $red;
+  border-color: $red;
+}
+
+.btn:hover {
+  background-color: $dark-red;
+  border-color: $dark-red;
+}
+
+.homepage-buttons {
+  margin-top: 25%;
+}
+
+.sign-in-btn {
+  margin-bottom: 5%;
+}
