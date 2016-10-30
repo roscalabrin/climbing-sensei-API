@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Climbing Sensei</title>
-    <%= csrf_meta_tags %>
+  <div id="wrap">
+    <head>
+      <title>Climbing Sensei</title>
+      <%= csrf_meta_tags %>
     
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-  </head>
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <%= stylesheet_link_tag    'application', media: 'all' %>
+      <%= javascript_include_tag 'application' %>
+    </head>
 
-  <body>
-    <%= yield %>
-  </body>
+    <body>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </body>
+  </div>
+  <footer id="footer">
+    <p class="text-muted">© 2016 by Climbing Sensei, Inc.</p>
+  </footer>
 </html>

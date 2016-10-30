@@ -1,10 +1,4 @@
-$red:      #94090D;
-$dark-red: #5C0002;
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-image: asset-url("BWhandsback.png");
-}
+@import 'variables';
 
 .btn {
   background-color: $red;
