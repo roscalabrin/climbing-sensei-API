@@ -2,8 +2,9 @@
   <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
+      
       <button type="button" class="btn btn-primary btn-lg btn-block sign-in-btn">Sign In</button>
-      <button type="button" class="btn btn-primary btn-lg btn-block create-account-btn">Create Account</button>
+      <%= button_to "Create Account", new_user_registration_path, method: "get", class: "btn btn-primary btn-lg btn-block create-account-btn" %>
     </div>
     <div class="col-md-4"></div>
   </div>
