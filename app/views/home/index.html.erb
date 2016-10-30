@@ -6,7 +6,7 @@
   <div class="row">
     <div class="absolute-center is-responsive">
       <div class="col-sm-12 col-md-10 col-md-offset-1">
-        <button type="button" class="btn btn-primary btn-lg btn-block sign-in-btn">Sign In</button>
+        <%= button_to "Sign In", new_user_session_path, method: "get", class: "btn btn-primary btn-lg btn-block sign-in-btn" %>
         <%= button_to "Create Account", new_user_registration_path, method: "get", class: "btn btn-primary btn-lg btn-block create-account-btn" %>
       </div>
     </div>
