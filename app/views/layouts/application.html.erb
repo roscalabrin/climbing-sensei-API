@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ClimbingSenseiApi</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+  <div id="wrap">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <%= favicon_link_tag %>
+      <title>Climbing Sensei</title>
+      <%= csrf_meta_tags %>
+    
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <%= stylesheet_link_tag    'application', media: 'all' %>
+      <%= javascript_include_tag 'application' %>
+    </head>
+    
+    <body>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </body>
+  </div>
+  <footer id="footer">
+    <p class="text-muted">© 2016 by Climbing Sensei, Inc.</p>
+  </footer>
 </html>

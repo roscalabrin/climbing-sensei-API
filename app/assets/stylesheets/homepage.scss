@@ -1,0 +1,40 @@
+@import 'variables';
+
+header[role="banner"] {
+  #logo-main {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.btn {
+  background-color: $red;
+  opacity: .7;
+  color: $white;
+  border-color: $red;
+}
+
+.btn:hover {
+  background-color: $black;
+  opacity: .7;
+  color: $white;
+  border-color: $black;
+}
+
+.sign-in-btn {
+  margin-bottom: 5%;
+}
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 50px; left: 0; bottom: 0; right: 0;
+}
+
+.absolute-center.is-responsive {
+  width: 80%; 
+  height: 40%;
+  min-width: 250px;
+  max-width: 400px;
+  padding: 40px;
+}

@@ -1,0 +1,52 @@
+@import 'variables';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: asset-url("BWhandsback.png");
+  background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+	background-color: #999;
+}
+
+.notice, .alert {
+  font-family: 'Poppins', sans-serif;
+  color: $white;
+}
+
+#error_explanation > h2 {
+  display: none;
+}
+
+#error_explanation > ul {
+  color: $red;
+  padding-left: 0px;
+  list-style: none;
+}
+
+footer {
+  height: 80px;
+  background-color: $dark-grey;
+  opacity: .7;
+  color: $light-grey
+}
+
+footer > p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  width: 100%; 
+  height: 100%;
+  margin: 0 auto -80px;
+  /* Pad the bottom by footer height */
+  padding: 0 0 80px;
+}
