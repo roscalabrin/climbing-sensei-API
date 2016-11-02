@@ -10,6 +10,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'rack-cors', :require => 'rack/cors'
 gem 'faker'
+gem 'figaro'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -17,7 +18,6 @@ gem 'faker'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'responders'
-gem 'rack-cors', :require => 'rack/cors'
 gem 'active_model_serializers', github: "rails-api/active_model_serializers"
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
