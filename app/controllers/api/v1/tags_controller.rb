@@ -2,6 +2,7 @@ class Api::V1::TagsController < ApplicationController
   respond_to :json
 
   def index
-    respond_with (tags = Tag.all)
+    tags = Tag.all
+    render json: tags, each_serializer: TagSerializer
   end
 end
