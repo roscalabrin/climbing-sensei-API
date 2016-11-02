@@ -9,7 +9,6 @@ class Users::SessionsController < Devise::SessionsController
     super
   end
 
-
   def destroy
     super
   end
