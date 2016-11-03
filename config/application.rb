@@ -19,14 +19,6 @@ Bundler.require(*Rails.groups)
 module ClimbingSenseiApi
   class Application < Rails::Application
     # Use the responders controller from the responders gem
-    config.app_generators.scaffold_controller :responders_controller
-
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins '*'
-        resource '*', :headers => :any, :methods => [:get, :delete]
-      end
-    end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -34,7 +26,7 @@ module ClimbingSenseiApi
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
-        resource '*', :headers => :any, :methods => [:get]
+        resource '*', :headers => :any, :methods => [:get, :delete]
       end
     end
   end
