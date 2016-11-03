@@ -4,6 +4,9 @@ class Seed
     create_tags
     create_exercises
     link_tags_to_exercises
+    create_test_user
+    create_saved_days
+    link_exercises_to_saved_days
   end
 
   def self.clear_seed_data
@@ -90,6 +93,32 @@ class Seed
           ExercisesTag.find_or_create_by(exercise_id: exercise.id, tag_id: sample_tag.id)
           puts "Created exercise tag for #{exercise.name} & #{sample_tag.name}"
         end
+      end
+    end
+  end
+
+  def self.create_test_user
+    user = User.create!(first_name: "Test", last_name: "Test", email: "test@example.com", password: "password")
+    puts "Created #{user.first_name}"
+  end
+
+  def self.create_saved_days
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    days.each do |day|
+      User.last.saved_days.create!(
+        title: day
+      )
+      puts "Created saved day: #{day}"
+    end
+  end
+
+  def self.link_exercises_to_saved_days
+    SavedDay.all.each do |saved_day|
+      random_number = rand(3..8)
+      random_number.times do |i|
+        sample_exercise = Exercise.all.sample
+        SavedDaysExercise.find_or_create_by(saved_day_id: saved_day.id, exercise_id: sample_exercise.id)
+        puts "Add exercise #{sample_exercise.name} for #{saved_day.title}"
       end
     end
   end

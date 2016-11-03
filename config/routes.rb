@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       resources :tags, only: [:index]
+      resources :saved_days, only: [:index]
+      delete 'logout', to: 'sessions#destroy'
     end
   end
 end
