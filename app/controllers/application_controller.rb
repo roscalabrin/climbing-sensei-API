@@ -39,7 +39,7 @@ class ApplicationController < ActionController::API
     end
 
     def authentication_error
-      render json: {error: t('unanthorize')}, status 401
+      render json: {error: t('unauthorize')}, status 401
     end
 
 end
